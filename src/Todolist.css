@@ -1,0 +1,105 @@
+:root{
+    --color-dark : #153448;
+    --color-medium : #3C5B6F;
+    --color-light : #DFD0B8;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+.to-do-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 40px;
+    min-height: 300px;
+    text-align: center;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border-radius: 10px;
+    box-shadow: 2px 1px 10px 4px rgba(0,0,0,0.4);
+   
+}
+@media screen and (max-width:560px) {
+    .to-do-list{
+        padding: 50px 40px;   }
+}
+li{
+    list-style: none;
+}
+.input-search{
+    display: flex;
+    width: 100%;
+    column-gap: 10px;
+}
+.input-search input{
+    flex: 1;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+.input-search input::placeholder{
+    color: #3f3f3fc7;
+  
+}
+.input-search button{
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    padding: 5px 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border:1px solid var(--color-dark);
+    transition: 0.3s ease;
+}
+
+.button{
+    background-color: var(--color-medium);
+    color: var(--color-light);
+    padding: 5px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border:1px solid var(--color-light);
+    transition: 0.3s ease;
+}
+.button:hover{
+    background-color: var(--color-light);
+    color: var(--color-dark);
+
+}
+.input-search button:hover{
+    border:1px solid var(--color-light);
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+ul{
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.task-display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.text{
+    flex: 1;
+    color: white;
+}
